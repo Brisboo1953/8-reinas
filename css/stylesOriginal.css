@@ -1,0 +1,29 @@
+:root{
+    --color1: #9314be;
+    --color2: #eb7afa;
+}
+
+
+table, td {
+    border : 1px solid black;
+    border-collapse: collapse;
+    width: 500px; /*esta propiedad solo se aplica a la tabla*/
+    height: 50px; /*esta propiedad solo se aplica a los objetos td */
+}
+
+tr:nth-child(even)
+td:nth-child(even),
+tr:nth-child(odd)
+td:nth-child(odd) {
+    background-color: var(--color1);
+}
+
+tr:nth-child(odd)
+td:nth-child(even),
+tr:nth-child(even)
+td:nth-child(odd){
+    background-color: var(--color2);
+}
+
+
+
